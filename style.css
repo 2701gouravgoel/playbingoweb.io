@@ -1,0 +1,76 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: crimson;
+    height: 3.5rem;
+    padding: 0%;
+}
+.enter{
+    display: flex;
+}
+.loginHeader{
+    padding: 1rem;
+    font-size: 2.5rem;
+}
+.loginHeader:hover{
+    color: white;
+}
+.register{
+    padding: 1rem;
+    font-size: 2.5rem;
+}
+.register:hover{
+    color: white;
+}
+.playBingoHeader{
+    padding: 1rem;
+    font-size: 2.5rem;
+}
+.allFour{
+
+}
+.firstTwo{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.7in;
+}
+.secondTwo{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.7in;
+}
+.playOnline{
+    padding: 3rem;
+    font-size: 3rem;
+}
+.withFriends{
+    padding: 3rem;
+    font-size: 3rem;
+}
+.checkActivity{
+    padding: 3rem;
+    font-size: 3rem;
+}
+.globalChat{
+    padding: 3rem;
+    font-size: 3rem;
+}
+.footer{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    background-color: crimson;
+    padding: 0%;
+    margin-bottom: 0rem;
+    height: 3.5rem;
+    align-items: center;
+}
+.contact{
+    font-size: 2.5rem;
+    padding: 1rem;
+}
+.developers{
+    font-size: 2.5rem;
+    padding: 1rem;
+}
