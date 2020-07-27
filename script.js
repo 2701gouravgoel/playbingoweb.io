@@ -1,13 +1,11 @@
-const socket = io('http://localhost:4000')
-var matrix = [];
-for(var i=0; i<5; i++) {
-    matrix[i] = new Array(5);
-}
+const socket = io()
 
 const username = "guest"
 socket.on('chat-message',data =>{
     console.log(data)
 })
+
+Playerturn =true;
 
 function send(){
     const message = messageInputt.value
@@ -30,8 +28,33 @@ socket.on('their',data=>{
     msgcontainer.append(msg)
 })
 
+
+
+function Press(val1,val2,val3){
+    
+    if(A[val1][val2]===0)
+    {
+        
+        console.log(window.A)
+        window.A[val1][val2]=1;
+        Playerturn=false;
+        var v1=val1+1;
+        var v2=val2+1;
+        document.getElementById('a'+v1+v2).style.backgroundColor='yellow';
+    }
+    
+}
+
 function array() {
     const a = [];
+        
+    window.A = [];
+    for(var i=0; i<5; i++) {
+        window.A[i] = [];
+        for(var j=0; j<5; j++) {
+            window.A[i][j] = 0;
+        }
+    }
     while(a.length < 25){
         var r = Math.floor(Math.random() * 25) + 1;
         if(a.indexOf(r) === -1) a.push(r);
