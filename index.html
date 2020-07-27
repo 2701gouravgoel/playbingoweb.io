@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <script defer src="http://localhost:4000/socket.io/socket.io.js">
+        </script>
+        <script defer src = "script.js"></script>
         <link rel="stylesheet" href="style.css"/>
         <title>
             playBingo
@@ -9,24 +12,24 @@
     <body>
         <header class="header">
             <div class="playBingoHeader">
-                <a href="index.html">playBingo</a>
+                <a class="link" href="index.html">playBingo</a>
             </div>
             <div class="enter">
                 <div class="loginHeader">
-                    <a href="#"> Login</a>
+                    <a class="link" href="#"> Login</a>
                 </div>
                 <div class="register">
-                    <a href="#"> Register </a>
+                    <a class="link" href="#"> Register </a>
                 </div>
             </div>
         </header>
         <main>
             <div class="allFour">
                 <div class="playOnline card">
-                    Play Online
+                    <a href="playonline.html">Play Online</a>
                 </div>
                 <div class="withFriends card">
-                    Play with Friends
+                    <a href="playwithfriends.html">Play with Friends</a>
                 </div>
                 <div class="checkActivity card">
                     Check Activity

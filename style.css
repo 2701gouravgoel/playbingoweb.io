@@ -105,6 +105,6 @@ a{
     text-decoration: none;
     color: #ffffff;
 }
-a:hover{
+.link:hover{
     color: rgba(243, 84, 10, 0.945);
 }
