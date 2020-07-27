@@ -70,3 +70,9 @@ a{
 .link:hover{
     color: rgba(243, 84, 10, 0.945);
 }
+
+.bingocloumn button{
+    background: none;
+    padding: 1rem;
+    border: none;
+}
