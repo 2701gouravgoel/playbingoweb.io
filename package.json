@@ -1,0 +1,23 @@
+{
+  "name": "playbingowebapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GameForces/playBingoWebApp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GameForces/playBingoWebApp/issues"
+  },
+  "homepage": "https://github.com/GameForces/playBingoWebApp#readme",
+  "dependencies": {
+    "socket.io": "^2.3.0"
+  }
+}

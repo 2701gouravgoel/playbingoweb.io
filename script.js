@@ -1,8 +1,20 @@
-const socket = io()
+var socket = io.connect('https://stark-bayou-29370.herokuapp.com/')
 
+window.socket.emit('playOnlineRequest',info);
+    
 const username = "guest"
 socket.on('chat-message',data =>{
     console.log(data)
+})
+
+var info ={
+    username :"gg"
+}
+socket.on('connect',function(){
+    console.log("hii")
+})
+socket.on('hh',function(d){
+    console.log("hii",d);
 })
 
 Playerturn =true;
@@ -30,8 +42,11 @@ socket.on('their',data=>{
 
 
 
+
 function Press(val1,val2,val3){
     
+    
+    window.socket.emit('playOnlineRequest',info);
     if(A[val1][val2]===0)
     {
         
@@ -47,7 +62,6 @@ function Press(val1,val2,val3){
 
 function array() {
     const a = [];
-        
     window.A = [];
     for(var i=0; i<5; i++) {
         window.A[i] = [];
